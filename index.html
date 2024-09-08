@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatherfeng Internet Café</title>
+    <link rel="icon" href="download.png" type="image/png">
+</head>
+  <style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-image: url('laptop-with-cup-water-cup-water-table_1081462-19911.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    z-index: 1;
+    max-width: 80%;
+}
+
+header h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+header .btn {
+    background-color: darkblue;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: lightseagreen;
+    color: darkblue;
+    transform: scale(1.05);
+}
+
+nav ul {
+    background-color: darkblue;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: lightseagreen;
+    font-weight: 600;
+    color: darkblue;
+}
+
+.section {
+    padding: 4em 2em;
+    background-color: white;
+    text-align: center;
+    border-bottom: 2px solid lightseagreen;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: darkblue;
+}
+
+.services-container, .pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.service-item, .pricing-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 2em;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.service-item:hover, .pricing-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.service-item h3, .pricing-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    color: lightseagreen;
+}
+
+.pricing-item {
+    background-color: darkblue;
+    color: white;
+}
+
+.hidden-content {
+    display: none;
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: lightseagreen;
+}
+
+.read-more {
+    color: lightseagreen;
+    cursor: pointer;
+    text-decoration: none;
+
+    
+}
+.read-more:hover{
+        color: black;
+        font-weight: 600;
+    }
+.contact-info {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.contact-info p {
+    margin: 0.5em 0;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer p:hover{
+    cursor: pointer;
+    color: lightseagreen;
+}
+
+  </style>
+  <body>
+
+    <header>
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>Welcome to Heatherfeng</h1>
+            <p>Discover the best Internet Café experience below</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <h3>High-Speed Internet</h3>
+                <p>Enjoy lightning-fast internet connections for all your needs.</p>
+                <div class="hidden-content">Our internet speed is up to 100 Mbps, ensuring a seamless experience for both work and play.</div>
+                <span class="read-more">Read more</span>
+            </div>
+            <div class="service-item">
+                <h3>Professional Printing</h3>
+                <p>High-quality printing services for documents, photos, and more.</p>
+                <div class="hidden-content">We use top-of-the-line printers to provide you with clear and crisp documents, no matter the size.</div>
+                <span class="read-more">Read more</span>
+            </div>
+            <div class="service-item">
+                <h3>Secure Scanning</h3>
+                <p>Fast and secure document scanning services.</p>
+                <div class="hidden-content">Our scanners are equipped with advanced security features to keep your documents safe.</div>
+                <span class="read-more">Read more</span>
+            </div>
+            <div class="service-item">
+                <h3>Gaming Stations</h3>
+                <p>State-of-the-art gaming setups for an immersive experience.</p>
+                <div class="hidden-content">Experience the latest games on high-performance computers with top-tier graphics.</div>
+                <span class="read-more">Read more</span>
+            </div>
+            <div class="service-item">
+                <h3>Comfortable Lounge</h3>
+                <p>Relax in our comfortable lounge with coffee and snacks.</p>
+                <div class="hidden-content">Our lounge offers a cozy atmosphere with free Wi-Fi, beverages, and snacks.</div>
+                <span class="read-more">Read more</span>
+            </div>
+            <div class="service-item">
+                <h3>learning Hacking</h3>
+                <p>learn Hacking with competition, you can try hacking for multiple platform.</p>
+                <div class="hidden-content">Wi-fi hacking, device hacking etc also enjoy with free Wi-Fi.</div>
+                <span class="read-more">Read more</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <h2>Pricing</h2>
+        <div class="pricing-table">
+            <div class="pricing-item">
+                <h3>Internet Access</h3>
+                <p>Tsh 500 per 6 hour</p>
+                <div class="hidden-content">Enjoy uninterrupted access to high-speed internet for just Tsh 500 per hour.</div>
+                <span class="read-more">Read more</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Printing</h3>
+                <p>Tsh 300 per page</p>
+                <div class="hidden-content">Get your documents printed at an affordable rate of Tsh 300 per page.</div>
+                <span class="read-more">Read more</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Scanning</h3>
+                <p>Tsh 1000 per page</p>
+                <div class="hidden-content">Securely scan your documents at Tsh 1000 per page.</div>
+                <span class="read-more">Read more</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Computer Rental</h3>
+                <p>Tsh 6000 per hour</p>
+                <div class="hidden-content">Rent our high-performance computers for Tsh 6000 per hour.</div>
+                <span class="read-more">Read more</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Gaming Station</h3>
+                <p>Tsh 2000 per hour</p>
+                <div class="hidden-content">Access our gaming stations for Tsh 2000 per hour and enjoy the latest games.</div>
+                <span class="read-more">Read more</span>
+            </div>
+            <div class="pricing-item">
+                <h3>Hire mobile Phone</h3>
+                <p>Tsh 2000 per 6 hours</p>
+                <div class="hidden-content">Access our services feel free  to use our  phones.</div>
+                <span class="read-more">Read more</span>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We really based in providing services, like Internet, Gaming you can hire any device  etc</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:heatherfeng00@gmail.com">info@heatherweb.com</a></p>
+            <p>Phone: <a href="tel:+255696682429">+255 657 682 429</a></p>
+            <p>Address: 000 Heatherfeng Internet Café, Arusha City</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Heatherfeng Internet Café. All rights reserved.</p>
+    </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Dynamic greeting based on time of day
+        const headerText = document.querySelector('.header-content h1');
+        const hours = new Date().getHours();
+        let greeting;
+
+        if (hours < 12) {
+            greeting = 'Good Morning, Welcome to';
+        } else if (hours < 18) {
+            greeting = 'Good Afternoon, Welcome to';
+        } else {
+            greeting = 'Good Evening, Welcome to';
+        }
+
+        headerText.textContent = `${greeting} Heatherfeng Internet Café`;
+
+        // Interactive background color change
+        document.body.addEventListener('click', () => {
+            document.body.style.backgroundColor = getRandomColor();
+        });
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // "Read More" functionality
+        const readMoreLinks = document.querySelectorAll('.read-more');
+        readMoreLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const hiddenContent = this.previousElementSibling;
+                const isVisible = hiddenContent.style.display === 'block';
+
+                hiddenContent.style.display = isVisible ? 'none' : 'block';
+                this.textContent = isVisible ? 'Read more' : 'Read less';
+            });
+        });
+    });
+
+    </script> 
+
+</body>
+</html>
+
+
+
